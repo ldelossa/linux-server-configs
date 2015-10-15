@@ -1,0 +1,4 @@
+#!/bin/bash
+
+yum install -y net-snmp net-snmp-devel net-snmp-utils
+net-snmp-config --create-snmpv3-user -ro -a TMPTemplate100 -x TMPTemplate100 -X AES -A SHA TMPSNMP
